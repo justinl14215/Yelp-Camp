@@ -20,7 +20,7 @@ var commentRoutes = require("./routes/comments"),
 	indexRoutes = require("./routes/index")
 	
 	
-mongoose.connect("mongodb://localhost:27017/yelp_campv11", {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect("mongodb://rounddaway:FSbNqB0l2o7mV4F4UlDwy3l2zFQBiBkkWoxeQdYoAEw91AFyULxJGH3pYugZuP2hqhkUmWOZyg7gNG56KNOyPg==@rounddaway.documents.azure.com:10255/?ssl=true&replicaSet=globaldb/yelp_camp_v11", {useNewUrlParser: true, useUnifiedTopology: true});
 mongoose.set("useFindAndModify", false);
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + "/public"));
